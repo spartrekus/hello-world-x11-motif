@@ -1,16 +1,9 @@
 
-// gcc -lXm -o hello motif.c 
-
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 
 #include <X11/Intrinsic.h>
 #include <Xm/Xm.h>
 #include <Xm/Label.h>
-
-#include <unistd.h>
-#include <time.h>
 
 int main(int argc, char *argv[])
 {
@@ -28,13 +21,7 @@ int main(int argc, char *argv[])
   XtRealizeWidget(toplevel);
   printf( "Show...\n" );
 
-
-
-
   XtMainLoop();
-   
-  printf( "Sleep...\n" );
-  usleep( 10 * 5 * 1e5 );
 
   return 0;
 }
